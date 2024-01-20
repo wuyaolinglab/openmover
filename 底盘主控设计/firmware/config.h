@@ -1,0 +1,44 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#define configMINIMAL_STACK_SIZE 245756
+
+// 看门狗部分设置
+#define WDT_TIMEOUT 1
+#define WDT_FEED_PERIOD 100
+
+// 按钮部分设置
+#define BUTTON_CONTROL_PERIOD 20
+#define BUTTON_PIN 8
+
+// LED部分设置
+#define LED_CONTROL_PERIOD 50
+#define LED_DATA_PIN 9
+#define LED_TYPE WS2811
+#define LED_NUM 50
+#define LED_COLOR_ORDER GRB
+
+// 电机部分设置
+#define MOTOR_CONTROL_PERIOD 5
+#define MOTOR_SERIAL Serial2
+#define MOTOR_BAUDRATE 115200l
+#define MOTOR_LEFT_ID 1
+#define MOTOR_RIGHT_ID 2
+#define MOTOR_MAX_RPM 330
+#define MOTOR_CMD_BUFFER_SIZE 10
+#define MOTOR_RECV_BUFFER_SIZE 10
+#define MOTOR_RECV_TIMEOUT 100
+#define MOTOR_PULSE_PER_ROUND 4096
+
+// 主从通讯设置
+#define COMM_SERIAL Serial1
+#define COMM_CONTROL_PERIOD 10
+#define COMM_BAUDRATE 230400l
+#define COMM_HEAD '#'
+#define COMM_TAIL '!'
+#define COMM_FILTER ' '
+#define COMM_STATE_WAITFORHEAD 0
+#define COMM_STATE_WAITFORTAIL 1
+#define COMM_MAX_BUFFER_SIZE 256
+
+#endif
