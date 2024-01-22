@@ -1,0 +1,12 @@
+1、安装相关库 
+	sudo apt-get install libpcap-dev
+2、将lsx10移动至工作空间，编译
+	catkin_make
+3、网口雷达运行：
+	roslaunch lslidar_driver lslidar_net.launch
+
+      串口雷达运行：
+	roslaunch lslidar_driver lslidar_serial.launch
+
+4、修改雷达运行launch中的雷达型号：
+	根据实际雷达型号，将lidar_name的value值修改成  M10或者M10_P 或者N10

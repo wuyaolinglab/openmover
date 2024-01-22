@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lslidar_driver_n10p</name>
+  <version>1.2.0</version>
+  <description>ROS device driver for Leishen lidar.</description>
+  <maintainer email="shaohuashu@lslidar.com">Nick Shu</maintainer>
+  <author>Nick Shu</author>
+  <license>GNU General Public License V3.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>lslidar_msgs</build_depend>
+  <build_depend>pcl_conversions</build_depend>
+  <build_depend>rclpy</build_depend>
+  <build_depend>libpcap</build_depend>
+  <build_depend>libpcl-all-dev</build_depend>
+  <build_depend>pluginlib</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>lslidar_msgs</exec_depend>
+  <exec_depend>pcl_conversions</exec_depend>
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>libpcap</exec_depend>
+  <exec_depend>libpcl-all</exec_depend>
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+
+  <depend>diagnostic_updater</depend>
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

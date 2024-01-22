@@ -1,0 +1,22 @@
+<package>
+
+  <name>lslidar</name>
+  <version>1.2.0</version>
+  <description>
+    Basic ROS support for the Leishen M10 N10 and L10 LIDARs.
+  </description>
+  <maintainer email="honghangli@lslidar.com">Nick Li</maintainer>
+  <author>Nick Li</author>
+  <license>GNU General Public License V3.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>lslidar_driver</run_depend>
+  <run_depend>lslidar_msgs</run_depend>
+
+
+  <export>
+    <metapackage/>
+  </export>
+
+</package>
